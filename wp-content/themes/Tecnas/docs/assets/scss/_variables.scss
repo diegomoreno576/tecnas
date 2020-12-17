@@ -1,0 +1,65 @@
+// Medias querys
+$breakpoints: (
+  "xs": "(min-width: 0px) and (max-width: 575px)",
+  "sm": "(min-width: 576px) and (max-width: 767px)",
+  "md": "(min-width: 768px) and (max-width: 991px)",
+  "lg": "(min-width: 992px) and (max-width: 1199px)",
+  "xl": "(min-width: 1200px)",
+  "wecan":
+    "(min-width: 1440px) and (max-width: 1440px) and (min-height: 900px) and (max-height:900px)",
+) !default;
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Aller-Bold";
+  src: url("../fonts/aller/aller.bold.ttf");
+}
+
+@font-face {
+  font-family: "Aller-Regular";
+  src: url("../fonts/aller/aller.regular.ttf");
+}
+
+@font-face {
+  font-family: "Aller-Light";
+  src: url("../fonts/aller/aller.light.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica/Helvetica.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("../fonts/helvetica/Helvetica-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("../fonts/helvetica/helvetica-light-587ebe5a59211.ttf");
+}
+
+// Fonts
+$bold: "Aller-Bold";
+$regular: "Aller-Regular";
+$light: "Aller-Light";
+$cabin: "Cabin", sans-serif;
+$helvetica: "Helvetica";
+$helveticaBold: "Helvetica-Bold";
+$helveticaLight: "Helvetica-Light";
+
+// Colors
+$primary: #0071ba;
+$secondary: #48bbef;
+$darkblue: #0265a5;
+$darkerblue: #033255;
+$text: #303030;
+$white: #fff;
+$black: #000;
+$lightgray: #f1f2f4;
+$gray: #d3d6dd;
+
+// Utils
+$radius: 5px;

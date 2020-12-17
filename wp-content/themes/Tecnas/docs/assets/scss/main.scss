@@ -1,0 +1,64 @@
+@import "variables";
+@import "mixins";
+@import "common";
+
+.main-slider {
+  .main-slider-item {
+    @include size(100%, 100vh);
+    position: relative;
+
+    img {
+      object-fit: contain;
+      object-position: right;
+      @include size(100%);
+    }
+
+    .main-slider-text {
+      position: absolute;
+      z-index: 1;
+      bottom: 40%;
+      color: $primary;
+      font-family: $bold;
+      transform: translateY(-50%);
+      left: 150px;
+
+      h1 {
+        font-size: 55px;
+      }
+    }
+
+    .main-slider-btn {
+      background-color: $primary;
+      color: $white;
+      border-radius: 47px;
+      padding: 20px 90px;
+      display: inline-block;
+      font-size: 25px;
+      font-family: $bold;
+      text-align: center;
+      position: absolute;
+      z-index: 1;
+      bottom: 20%;
+      left: 150px;
+    }
+  }
+
+  .slick-next::before,
+  .slick-prev::before {
+    content: unset;
+  }
+
+  .slick-next,
+  .slick-prev {
+    height: unset;
+    width: 30px;
+  }
+
+  .slick-next {
+    right: 25px;
+  }
+
+  .slick-prev {
+    left: 25px;
+  }
+}
